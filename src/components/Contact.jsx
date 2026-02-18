@@ -19,7 +19,7 @@ function Contact() {
             </p>
 
             <div className="contact-items">
-              <a href="mailto:karikolraja03@gmail.com" className="contact-item">
+              <a href="mailto:sri.dream18@gmail.com" className="contact-item">
                 <div className="contact-item-icon">
                   <FaEnvelope />
                 </div>

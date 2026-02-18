@@ -24,7 +24,7 @@ function Footer() {
             <h4>Connect</h4>
             <div className="footer-social-links">
               <a
-                href="https://www.linkedin.com/in/j-karikol-raja-018292219"
+                href="https://www.linkedin.com/in/sri-bhuvane-j-484304264"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -32,14 +32,14 @@ function Footer() {
                 <FaLinkedin />
               </a>
               <a
-                href="https://github.com/karikol2310"
+                href="https://github.com/sridream18"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
               >
                 <FaGithub />
               </a>
-              <a href="mailto:karikolraja03@gmail.com" aria-label="Email">
+              <a href="mailto:sri.dream18@gmail.com" aria-label="Email">
                 <FaEnvelope />
               </a>
             </div>
@@ -48,7 +48,7 @@ function Footer() {
 
         <div className="footer-bottom">
           <p>
-            &copy; {new Date().getFullYear()} J. Karikol Raja. Made with <FaHeart className="footer-heart" /> in India
+            &copy; {new Date().getFullYear()} J. Sri Bhuvane. Made with <FaHeart className="footer-heart" /> in India
           </p>
         </div>
       </div>
