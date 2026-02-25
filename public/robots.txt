@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sribhuvane.online/sitemap.xml
+Sitemap: https://sribhuvanej.online/sitemap.xml
