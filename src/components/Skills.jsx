@@ -42,14 +42,17 @@ function Skills() {
         <div className="skills-grid">
           {skills.map((skill) => (
             <div key={skill.name} className="skill-card card">
-              <div className="skill-icon">{skill.icon}</div>
+              <div className="skill-icon" aria-hidden="true">{skill.icon}</div>
+
               <h3 className="skill-name">{skill.name}</h3>
-              <div className="skill-bar">
+              <div className="skill-bar" role="progressbar" aria-valuenow={skill.level} aria-valuemin="0" aria-valuemax="100" aria-label={`${skill.name} proficiency`}>
                 <div
                   className="skill-bar-fill"
                   style={{ width: `${skill.level}%` }}
                 ></div>
               </div>
+
+
               <span className="skill-level">{skill.level}%</span>
             </div>
           ))}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sribhuvane.dev/sitemap.xml

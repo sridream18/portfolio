@@ -13,9 +13,10 @@ function Education() {
 
         <div className="education-card card">
           <div className="education-accent"></div>
-          <div className="education-icon">
+          <div className="education-icon" aria-hidden="true">
             <FaGraduationCap />
           </div>
+
           <div className="education-details">
             <h3 className="education-degree">Master of Computer Applications (MCA)</h3>
             <p className="education-school">Ayya Nadar Janaki Ammal College</p>
