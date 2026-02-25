@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
 import { useTheme } from '../context/ThemeContext';
+import ShareButton from './ShareButton';
 import './Navbar.css';
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,10 +33,14 @@ function Navbar() {
           <a href="#projects" className="nav-link" onClick={() => setIsOpen(false)}>Projects</a>
           <a href="#contact" className="btn btn-primary nav-btn" onClick={() => setIsOpen(false)}>Let's Talk</a>
           
-          <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
-            {theme === 'dark' ? <FaSun className="theme-icon" /> : <FaMoon className="theme-icon" />}
-          </button>
+          <div className="nav-actions">
+            <ShareButton />
+            <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+              {theme === 'dark' ? <FaSun className="theme-icon" /> : <FaMoon className="theme-icon" />}
+            </button>
+          </div>
         </div>
+
 
         <button 
           className="menu-toggle" 
