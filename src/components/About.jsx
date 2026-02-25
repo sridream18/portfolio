@@ -37,19 +37,22 @@ function About() {
 
           <div className="services-grid">
             <div className="service-card glass-panel">
-              <div className="icon-box"><FaCode /></div>
+              <div className="icon-box"><FaCode aria-hidden="true" /></div>
+
               <h3>Modern Frontend</h3>
               <p>Scalable architecture using React, Next.js, and TypeScript.</p>
             </div>
             
             <div className="service-card glass-panel">
-              <div className="icon-box"><FaMobileAlt /></div>
+              <div className="icon-box"><FaMobileAlt aria-hidden="true" /></div>
+
               <h3>Responsive Design</h3>
               <p>Mobile-first approach ensuring perfect display on all devices.</p>
             </div>
 
             <div className="service-card glass-panel">
-              <div className="icon-box"><FaRocket /></div>
+              <div className="icon-box"><FaRocket aria-hidden="true" /></div>
+
               <h3>Performance</h3>
               <p>Optimized load times and smooth 60fps animations.</p>
             </div>

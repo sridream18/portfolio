@@ -1,8 +1,19 @@
+import { useState, useEffect } from 'react';
 import { FaLinkedin, FaGithub, FaFileDownload } from 'react-icons/fa';
 import './Hero.css';
 
 function Hero() {
+  const [greeting, setGreeting] = useState('');
+
+  useEffect(() => {
+    const hour = new Date().getHours();
+    if (hour < 12) setGreeting('Good Morning');
+    else if (hour < 18) setGreeting('Good Afternoon');
+    else setGreeting('Good Evening');
+  }, []);
+
   return (
+
     <section id="hero" className="hero section">
       <div className="hero-background">
         <div className="glow-orb orb-1"></div>
@@ -11,13 +22,16 @@ function Hero() {
 
       <div className="container hero-container">
         <div className="hero-content">
-          <div className="hero-badge">
-            <span className="pulsing-dot"></span> Available for work
-          </div>
+          {/* <div className="hero-badge float-animation">
+            <span className="pulsing-dot"></span> 
+             <span className="badge-text">Available for Innovation</span> 
+          </div> */}
           
+          {/* <p className="hero-greeting">{greeting},</p> */}
           <h1 className="hero-title">
-            Hi, I'm <span className="text-gradient">Sri Bhuvane</span>
+            I'm <span className="text-gradient">Sri Bhuvane</span>
           </h1>
+
           
           <h2 className="hero-subtitle">
             Frontend Developer & <br/> UI/UX Enthusiast
@@ -38,10 +52,11 @@ function Hero() {
           </div>
 
           <div className="social-links">
-            <a href="#" className="social-icon"><FaLinkedin /></a>
-            <a href="#" className="social-icon"><FaGithub /></a>
-            <a href="#" className="social-icon"><FaFileDownload /> Resume</a>
+            <a href="#" className="social-icon" aria-label="LinkedIn"><FaLinkedin aria-hidden="true" /></a>
+            <a href="#" className="social-icon" aria-label="GitHub"><FaGithub aria-hidden="true" /></a>
+            <a href="#" className="social-icon" aria-label="Download Resume"><FaFileDownload aria-hidden="true" /> Resume</a>
           </div>
+
         </div>
 
         <div className="hero-visual">

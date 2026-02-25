@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
+import { useTheme } from '../context/ThemeContext';
 import './Navbar.css';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,7 +17,8 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} aria-label="Main navigation">
+
       <div className="container nav-container">
         <a href="#hero" className="nav-logo">
           Sri<span className="text-gradient">.Dev</span>
@@ -27,11 +30,21 @@ function Navbar() {
           <a href="#skills" className="nav-link" onClick={() => setIsOpen(false)}>Skills</a>
           <a href="#projects" className="nav-link" onClick={() => setIsOpen(false)}>Projects</a>
           <a href="#contact" className="btn btn-primary nav-btn" onClick={() => setIsOpen(false)}>Let's Talk</a>
+          
+          <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+            {theme === 'dark' ? <FaSun className="theme-icon" /> : <FaMoon className="theme-icon" />}
+          </button>
         </div>
 
-        <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <FaTimes /> : <FaBars />}
+        <button 
+          className="menu-toggle" 
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+        >
+          {isOpen ? <FaTimes aria-hidden="true" /> : <FaBars aria-hidden="true" />}
         </button>
+
       </div>
     </nav>
   );

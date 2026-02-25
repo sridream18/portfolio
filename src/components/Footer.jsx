@@ -29,27 +29,31 @@ function Footer() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <FaLinkedin />
+                <FaLinkedin aria-hidden="true" />
               </a>
+
               <a
                 href="https://github.com/sridream18"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
               >
-                <FaGithub />
+                <FaGithub aria-hidden="true" />
               </a>
+
               <a href="mailto:sri.dream18@gmail.com" aria-label="Email">
-                <FaEnvelope />
+                <FaEnvelope aria-hidden="true" />
               </a>
+
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
           <p>
-            &copy; {new Date().getFullYear()} J. Sri Bhuvane. Made with <FaHeart className="footer-heart" /> in India
+            &copy; {new Date().getFullYear()} J. Sri Bhuvane. Made with <FaHeart className="footer-heart" aria-hidden="true" /> in India
           </p>
+
         </div>
       </div>
     </footer>
