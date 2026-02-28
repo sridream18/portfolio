@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { FiMessageSquare, FiX, FiSend } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
 import './Chatbot.css';
 
 const PREDEFINED_RESPONSES = {
@@ -72,9 +73,20 @@ const Chatbot = () => {
               <span className="chatbot-status">Online</span>
             </div>
           </div>
-          <button className="chatbot-close" onClick={() => setIsOpen(false)}>
-            <FiX size={20} />
-          </button>
+          <div className="chatbot-header-actions">
+            <a 
+              href="https://wa.me/918072978054" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="chatbot-whatsapp-btn"
+              title="Chat on WhatsApp"
+            >
+              <FaWhatsapp size={20} />
+            </a>
+            <button className="chatbot-close" onClick={() => setIsOpen(false)}>
+              <FiX size={20} />
+            </button>
+          </div>
         </div>
 
         <div className="chatbot-messages">

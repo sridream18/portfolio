@@ -117,6 +117,27 @@
   display: inline-block;
 }
 
+.chatbot-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.chatbot-whatsapp-btn {
+  color: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+}
+
+.chatbot-whatsapp-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 .chatbot-close {
   background: none;
   border: none;
