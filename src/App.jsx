@@ -11,6 +11,7 @@ const Experience = lazy(() => import('./components/Experience'));
 const Education = lazy(() => import('./components/Education'));
 const Contact = lazy(() => import('./components/Contact'));
 const Footer = lazy(() => import('./components/Footer'));
+import Chatbot from './components/Chatbot';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Suspense fallback={null}>
           <Footer />
         </Suspense>
+        <Chatbot />
       </div>
     </ThemeProvider>
   );
