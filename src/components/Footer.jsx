@@ -1,5 +1,4 @@
 import { FaLinkedin, FaEnvelope, FaGithub, FaHeart } from 'react-icons/fa';
-import Logo from './Logo';
 import './Footer.css';
 
 function Footer() {
@@ -8,7 +7,9 @@ function Footer() {
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
-            <Logo size="default" />
+            <a href="#hero" className="nav-logo footer-logo" aria-label="J. Sri Bhuvane Dev Logo - Home">
+              Sri<span className="text-gradient">.Dev</span>
+            </a>
             <p className="footer-tagline">Building digital experiences with passion and precision.</p>
           </div>
 
