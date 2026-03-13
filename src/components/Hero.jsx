@@ -52,9 +52,9 @@ function Hero() {
           </div>
 
           <div className="social-links">
-            <a href="#" className="social-icon" aria-label="LinkedIn"><FaLinkedin aria-hidden="true" /></a>
-            <a href="#" className="social-icon" aria-label="GitHub"><FaGithub aria-hidden="true" /></a>
-            <a href="#" className="social-icon" aria-label="Download Resume"><FaFileDownload aria-hidden="true" /> Resume</a>
+            <a href="https://linkedin.com/in/sri-bhuvane-j-484304264" className="social-icon" aria-label="Visit Sri Bhuvane's LinkedIn Profile" target="_blank" rel="noopener noreferrer"><FaLinkedin aria-hidden="true" /></a>
+            <a href="https://github.com/sridream18" className="social-icon" aria-label="Visit Sri Bhuvane's GitHub Profile" target="_blank" rel="noopener noreferrer"><FaGithub aria-hidden="true" /></a>
+            <a href="/resume.pdf" className="social-icon" aria-label="Download Sri Bhuvane's Resume" target="_blank" rel="noopener noreferrer"><FaFileDownload aria-hidden="true" /> Resume</a>
           </div>
 
         </div>
