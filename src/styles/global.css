@@ -15,7 +15,7 @@
   /* Text Colors - High Contrast for Accessibility */
   --text-primary: #0f172a;
   --text-secondary: #334155;
-  --text-muted: #64748b;
+  --text-muted: #475569;
   
   /* Borders & Effects */
   --border: #e2e8f0;
@@ -39,7 +39,7 @@
   /* Text Colors */
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
-  --text-muted: #64748b;
+  --text-muted: #94a3b8;
 
   /* Borders & Effects */
   --border: #1e293b;
@@ -160,6 +160,25 @@ h1, h2, h3, h4, h5, h6 {
   0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4); }
   70% { box-shadow: 0 0 0 15px rgba(99, 102, 241, 0); }
   100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  z-index: 9999;
+  transition: top 0.3s ease;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0 0 12px 0;
+}
+
+.skip-link:focus {
+  top: 0;
 }
 
 /* Scrollbar */

@@ -22,7 +22,7 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} aria-label="Main navigation">
 
       <div className="container nav-container">
-        <a href="#hero" className="nav-logo">
+        <a href="#hero" className="nav-logo" aria-label="J. Sri Bhuvane Dev Logo - Home">
           Sri<span className="text-gradient">.Dev</span>
         </a>
 
@@ -35,7 +35,7 @@ function Navbar() {
           
           <div className="nav-actions">
             <ShareButton />
-            <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+            <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle light/dark theme">
               {theme === 'dark' ? <FaSun className="theme-icon" /> : <FaMoon className="theme-icon" />}
             </button>
           </div>

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 import ScrollProgress from './components/ScrollProgress';
 import './styles/global.css';
 import { ThemeProvider } from './context/ThemeContext';
@@ -17,13 +18,15 @@ function App() {
   return (
     <ThemeProvider>
       <div className="app">
+        <a href="#main-content" className="skip-link">Skip to main content</a>
         <ScrollProgress />
         <Navbar />
 
-        <main>
+        <main id="main-content">
           <Hero />
           <About />
           <Skills />
+          <Projects />
           <Suspense fallback={<div className="section-loader">Loading...</div>}>
             <Experience />
             <Education />

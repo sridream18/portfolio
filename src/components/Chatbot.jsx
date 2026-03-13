@@ -83,7 +83,7 @@ const Chatbot = () => {
             >
               <FaWhatsapp size={20} />
             </a>
-            <button className="chatbot-close" onClick={() => setIsOpen(false)}>
+            <button className="chatbot-close" onClick={() => setIsOpen(false)} aria-label="Close chat assistant">
               <FiX size={20} />
             </button>
           </div>
@@ -107,8 +107,9 @@ const Chatbot = () => {
             onChange={(e) => setInput(e.target.value)}
             placeholder="Ask a question..."
             className="chatbot-input"
+            aria-label="Ask a question to the assistant"
           />
-          <button type="submit" className="chatbot-send-btn" disabled={!input.trim()}>
+          <button type="submit" className="chatbot-send-btn" disabled={!input.trim()} aria-label="Send message">
             <FiSend size={18} />
           </button>
         </form>
@@ -118,6 +119,7 @@ const Chatbot = () => {
       <button 
         className={`chatbot-toggle ${isOpen ? 'hidden' : ''}`}
         onClick={() => setIsOpen(true)}
+        aria-label="Open chat assistant"
       >
         <FiMessageSquare size={24} />
       </button>
