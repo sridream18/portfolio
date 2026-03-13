@@ -3,20 +3,36 @@ import './Projects.css';
 
 const projects = [
   {
-    title: 'Modern Portfolio',
-    description: 'A premium, high-performance portfolio website built with React and Vite.',
-    tech: ['React', 'Vite', 'CSS3'],
+    title: 'SecureAuth Pro',
+    description: 'A robust, multi-factor authentication system with JWT, OAuth2, and glassmorphism UI.',
+    tech: ['React', 'Node.js', 'JWT', 'Firebase'],
     github: '#',
     live: '#',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1000&auto=format&fit=crop'
+    image: '/projects/auth.png'
   },
   {
-    title: 'E-Commerce Dashboard',
-    description: 'A robust administrative dashboard for managing online store operations.',
-    tech: ['Next.js', 'TypeScript', 'Tailwind'],
+    title: 'Tesco Analytics',
+    description: 'Enterprise-grade retail dashboard for inventory tracking and sales forecasting.',
+    tech: ['Next.js', 'Chart.js', 'Tailwind', 'PostgreSQL'],
     github: '#',
     live: '#',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop'
+    image: '/projects/tesco.png'
+  },
+  {
+    title: 'FinanceFlow',
+    description: 'Premium wealth management platform with AI-driven expense categorization and insights.',
+    tech: ['React', 'TypeScript', 'D3.js', 'Express'],
+    github: '#',
+    live: '#',
+    image: '/projects/finance.png'
+  },
+  {
+    title: 'FCS Shield',
+    description: 'Real-time Field Control System for mission-critical operation monitoring and coordination.',
+    tech: ['React', 'Socket.io', 'Mapbox', 'Redux'],
+    github: '#',
+    live: '#',
+    image: '/projects/fcs.png'
   }
 ];
 
