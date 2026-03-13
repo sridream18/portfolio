@@ -202,8 +202,8 @@
 }
 
 .message-wrapper.user .message-content {
-  background: var(--primary);
-  color: white;
+  background: #3730a3; /* Darker indigo for 4.5:1 contrast on white/light text */
+  color: #ffffff;
   border-bottom-right-radius: 4px;
 }
 

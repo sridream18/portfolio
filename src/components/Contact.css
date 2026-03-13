@@ -42,7 +42,6 @@
 
 .contact-map:hover {
   border-color: var(--primary);
-  box-shadow: 0 8px 30px var(--shadow-color);
   transform: translateY(-4px);
 }
 
